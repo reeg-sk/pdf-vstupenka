@@ -1,0 +1,29 @@
+{
+  "name": "pdf-vstupenka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only src/index",
+    "clean": "rm -rf dist",
+    "build": "npm -s run clean && tsc"
+  },
+  "keywords": [],
+  "author": "reeg-sk",
+  "license": "ISC",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@types/pdfkit": "^0.12.6",
+    "@types/qrcode": "^1.4.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "pdfkit": "^0.13.0",
+    "qrcode": "^1.5.1"
+  }
+}
